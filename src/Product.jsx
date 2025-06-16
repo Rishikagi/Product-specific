@@ -6,6 +6,7 @@ import small from './assets/small.svg';
 import icon from './assets/icon.svg';
 import share from './assets/share.svg';
 import heart from './assets/heart.svg';
+import Rating from './Rating';
 
 
 const Product = () => {
@@ -66,7 +67,7 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
         {/* Right Product Info Section */}
         <div className="md:w-1/2 space-y-4">
          <div className="flex justify-between items-center">
-    <h2 className="text-2xl font-semibold mt-6">Name of product</h2>
+    <h2 className="text-4xl font-semibold mt-6">Name of product</h2>
     <div className="flex gap-2">
       <img src={share} alt="Share" className="w-5 h-5 cursor-pointer" />
       <img src={heart} alt="Wishlist" className="w-5 h-5 cursor-pointer" />
@@ -74,36 +75,38 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
   </div>
   <p className="text-gray-600">Description, size, colour, type</p>
           <div className="text-xl font-bold">
-            Rs. 99/- <del className="text-gray-500">198</del>{" "}
+            Rs. 99/- Only<del className="text-gray-500">198</del>{" "} <br />
             <span className="text-green-600">50% OFF</span>
           </div>
           <p className="text-sm text-gray-500">Price incl. of all taxes</p>
-          <div className="text-yellow-500 text-lg">★★★★☆</div>
+          <div className="text-yellow-500 text-lg"><Rating/></div>
 
           <hr />
 
-          <div>
-            <strong>Choose Size:</strong> 13×18 cm
-          </div>
+          <div className="flex justify-between items-center">
+    <h3 className="text-xl font-medium">Choose Size <br />13*18 cm</h3>
+    
+    <img src={arrow} alt="" className="w-5 h-5" />
+  </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center bg-gray-200 rounded-lg w-fit gap-2">
             <button
-              className="px-3 py-1 bg-gray-200 rounded"
+              className="px-3 py-1 rounded"
               onClick={() => handleQuantityChange(-1)}
             >
-              -
+              <h3>-</h3>
             </button>
             <input
               type="text"
               readOnly
               value={quantity}
-              className="w-12 text-center border rounded"
+              className="w-12 text-center "
             />
             <button
-              className="px-3 py-1 bg-gray-200 rounded"
+              className="px-3 py-1  rounded"
               onClick={() => handleQuantityChange(1)}
             >
-              +
+              <h2>+</h2>
             </button>
           </div>
 
@@ -137,7 +140,7 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
         {[...Array(4)].map((_, idx) => (
           <div key={idx} className="border p-4 rounded shadow-sm">
             <h4 className="font-medium">Great Product</h4>
-            <div className="text-yellow-500 mb-2">★★★★☆</div>
+            <div className="text-yellow-500 mb-2"><Rating/></div>
             <p className="text-sm text-gray-600">
               Lorem ipsum dolor sit amet consectetur. Morbi ut et magna sed.
             </p>
