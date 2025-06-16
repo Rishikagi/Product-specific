@@ -4,6 +4,8 @@ import main from './assets/main.svg';
 import arrow from './assets/arrow.svg';
 import small from './assets/small.svg';
 import icon from './assets/icon.svg';
+import share from './assets/share.svg';
+import heart from './assets/heart.svg';
 
 
 const Product = () => {
@@ -24,37 +26,61 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
     <span className="text-sm">Photo Frames</span>
     <img src={arrow} alt="" className="w-4 h-4" />
     <span className="text-sm">Coloured Square, 4*6</span>
-  </div>
+  </div> <br />
       <div className="flex flex-col md:flex-row gap-8">
         {/* Left Image Section */}
-        <div className="md:w-1/2 text-center">
-          <img
-            src={main}
-            alt="Main Product"
-            className="w-full h-auto mb-4 rounded"
-          />
-          <div className="flex justify-center gap-2 flex-wrap">
-            {[...Array(5)].map((_, idx) => (
-              <img
-                key={idx}
-                src={small}
-                alt={`Thumbnail ${idx + 1}`}
-                className="w-14 h-14 rounded border"
-              />
-            ))}
-          </div>
-        </div>
+        <div className="md:w-1/2 flex gap-4">
+  {/* Small Images on the Left */}
+  <div className="flex flex-col gap-2">
+    {[...Array(8)].map((_, idx) => (
+      <img
+        key={idx}
+        src={small}
+        alt={`Thumbnail ${idx + 1}`}
+        className="w-14 h-14 rounded border"
+      />
+    ))}
+  </div>
+
+  {/* Main Image on the Right */}
+  <div className="flex-1">
+    <img
+      src={main}
+      alt="Main Product"
+      className="w-full h-auto rounded"
+    /> <br />
+    <p className="text-black-900">
+            Lorem ipsum dolor sit amet consectetur. Morbi ut et magna sed. Aliquam quam
+            adipiscing at elementum ac erat bibendum sed.
+          
+          </p>
+          <br />
+
+          <p className="text-sm text-gray-500">Delivery and Gift wrap prices not included</p>
+
+          <button className="text-sm bg-gray-200 rounded-lg mt-9 mb-2 text-black-500">Item No: 86893166</button>
+  </div>
+</div>
+
 
         {/* Right Product Info Section */}
         <div className="md:w-1/2 space-y-4">
-          <h2 className="text-2xl font-semibold">Name of product</h2>
-          <p className="text-gray-600">Description, size, colour, type</p>
+         <div className="flex justify-between items-center">
+    <h2 className="text-2xl font-semibold mt-6">Name of product</h2>
+    <div className="flex gap-2">
+      <img src={share} alt="Share" className="w-5 h-5 cursor-pointer" />
+      <img src={heart} alt="Wishlist" className="w-5 h-5 cursor-pointer" />
+    </div>
+  </div>
+  <p className="text-gray-600">Description, size, colour, type</p>
           <div className="text-xl font-bold">
             Rs. 99/- <del className="text-gray-500">198</del>{" "}
             <span className="text-green-600">50% OFF</span>
           </div>
           <p className="text-sm text-gray-500">Price incl. of all taxes</p>
           <div className="text-yellow-500 text-lg">★★★★☆</div>
+
+          <hr />
 
           <div>
             <strong>Choose Size:</strong> 13×18 cm
@@ -81,17 +107,14 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
             </button>
           </div>
 
-          <div className="flex gap-4">
-            <button className="px-4 py-2 bg-button text-white rounded">ADD TO CART</button>
-            <button className="px-4 py-2 bg-button text-white rounded">BUY NOW</button>
+          <div className=" gap-4">
+            <button className="px-4 py-2 bg-button text-white rounded-lg">ADD TO CART</button>
+             <br />
+             <br />
+            <button className="px-2 py-2 bg-button text-white w-full rounded-lg">BUY NOW</button>
           </div>
 
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur. Morbi ut et magna sed. Aliquam quam
-            adipiscing at elementum ac erat bibendum sed.
-          </p>
-
-          <button className="text-sm bg-grey text-black-500">Item No: 86893166</button>
+          
         </div>
       </div>
 
