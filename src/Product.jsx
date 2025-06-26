@@ -116,7 +116,7 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
   </div>
 
   {/* Add to Cart Button */}
-  <button className="px-14 py-2 bg-button text-white rounded-[30px] transition-transform duration-300 ease-in-out hover:bg-black">
+  <button className="px-14 py-2 max-h-[200px] md:max-h-none bg-button text-white rounded-[30px] transition-transform duration-300 ease-in-out hover:bg-black">
     ADD TO CART
   </button>
 </div>
@@ -136,7 +136,8 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
 
       
       {/* Product Tabs */}
-      <div className="grid  gap-6 mb-8 ml-[70px]">
+      <div className="flex-1 ml-[1px] md:ml-[70px]">
+      <div className="grid  gap-6 mb-8 ">
         <hr />
         <div className="flex justify-between items-center">
       
@@ -149,8 +150,8 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
   </div> <hr />
       </div>
 
-      <h3 className="text-xl font-semibold mb-4 ml-[70px]">Customer Reviews</h3>
-      <div className="grid ml-[70px] grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <h3 className="text-xl font-semibold mb-4 ">Customer Reviews</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {[...Array(4)].map((_, idx) => (
           <div key={idx} className="border p-4 rounded shadow-sm">
             <h4 className="font-medium">Great Product</h4>
@@ -161,7 +162,7 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
             <p className="text-xs text-gray-400 mt-2">lorem, india</p>
           </div>
         ))}
-      </div>
+      </div></div>
     </div>
   );
 };
