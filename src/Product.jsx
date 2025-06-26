@@ -116,7 +116,8 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
   </div>
 
   {/* Add to Cart Button */}
-  <button className="px-6 py-1 text-xs sm:px-14 sm:py-2 sm:text-sm bg-button text-white rounded-[30px] transition-transform duration-300 ease-in-out hover:bg-black">
+  <button className="px-8 py-2 text-sm sm:px-14 sm:py-2 sm:text-base bg-button text-white rounded-[30px] transition-transform duration-300 ease-in-out hover:bg-black
+">
     ADD TO CART
   </button>
 </div>
