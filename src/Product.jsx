@@ -5,7 +5,7 @@ import arrow from './assets/arrow.svg';
 import small from './assets/small.svg';
 import icon from './assets/Icon.svg';
 import share from './assets/share.svg';
-import heart from './assets/heart.svg';
+import heart from './assets/Heart.svg';
 import Rating from './Rating';
 
 
