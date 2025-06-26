@@ -93,7 +93,7 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
   </div>
   <div className=" w-full sm:w-fit pb-4">
 
-          <div className="flex items-center gap-2 sm:gap-[80px] flex-wrap sm:flex-nowrap w-full sm:w-fit">
+          <div className="flex items-center gap-2 sm:gap-[90px] flex-wrap sm:flex-nowrap w-full sm:w-fit">
   {/* Quantity Counter */}
   <div className="flex items-center bg-gray-200 rounded-[30px] gap-2 px-6 py-1 sm:px-12 ">
     <button
