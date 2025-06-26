@@ -91,8 +91,9 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
     
     <img src={arrow} alt="" className="w-5 h-5  cursor-pointer transtion-transform duration-300 ease-in-out hover:scale-75" />
   </div>
+  <div className=" w-full sm:w-fit pb-4">
 
-          <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap w-full sm:w-fit">
+          <div className="flex items-center gap-2 sm:gap-[80px] flex-wrap sm:flex-nowrap w-full sm:w-fit">
   {/* Quantity Counter */}
   <div className="flex items-center bg-gray-200 rounded-[30px] gap-2 px-6 py-1 sm:px-12 ">
     <button
@@ -120,14 +121,14 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
 ">
     ADD TO CART
   </button>
-</div>
+</div> <br />
 
 
           <div className=" gap-4">
             
              
             <button className="px-2 py-2 bg-button text-white w-full rounded-[30px] transition-transform duration-300 ease-in-out hover:bg-black">BUY NOW</button>
-          </div>
+          </div></div>
 
           <div className=" flex justify-end"> <img src={share} alt="" className="w-5 h-5 cursor-pointer mt-[90px] transtion-transform duration-300 ease-in-out hover:scale-75 " /></div>
        
