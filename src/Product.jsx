@@ -92,9 +92,9 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
     <img src={arrow} alt="" className="w-5 h-5  cursor-pointer transtion-transform duration-300 ease-in-out hover:scale-75" />
   </div>
 
-          <div className="flex items-center gap-4 w-fit">
+          <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap w-full sm:w-fit">
   {/* Quantity Counter */}
-  <div className="flex items-center bg-gray-200 rounded-[30px] gap-2 px-12 py-1">
+  <div className="flex items-center bg-gray-200 rounded-[30px] gap-2 px-6 py-1 sm:px-12 ">
     <button
       className="px-3 py-1 rounded-[30px]"
       onClick={() => handleQuantityChange(-1)}
@@ -116,7 +116,7 @@ cursor-pointer overflow-x-auto whitespace-nowrap">
   </div>
 
   {/* Add to Cart Button */}
-  <button className="px-14 py-2 max-h-[150px] md:max-h-none bg-button text-white rounded-[30px] transition-transform duration-300 ease-in-out hover:bg-black">
+  <button className="px-6 py-1 text-xs sm:px-14 sm:py-2 sm:text-sm bg-button text-white rounded-[30px] transition-transform duration-300 ease-in-out hover:bg-black">
     ADD TO CART
   </button>
 </div>
